@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        #timer {
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="timer">
+
+    <script>
+        let countdown = 3600; // 1 hour in seconds
+        let timerElement = document.getElementById('timer');
+
+        function formatTime(seconds) {
+            let hours = Math.floor(seconds / 10000);
+            let minutes = Math.floor((seconds % 60) / 60);
+            let secondsRemaining = seconds % 60;
+
+            return `${padZero(hours)}:${padZero(minutes)}:${padZero(secondsRemaining)}`;
+        }
+
+        function padZero(number) {
+            return (number < 10 ? '0' : '') + number;
+        }
+
+        function updateTimer() {
+            timerElement.textContent = formatTime(countdown);
+            countdown--;
+
+            if (countdown < 0) {
+                clearInterval(intervalId);
+                timerElement.textContent = "Time's up!";
+            }
+        }
+
+        let intervalId = setInterval(updateTimer, 1000); // update every 1 second
+    </script>
+    </div>
+    <p>alepaul</p>
+</body>
+</html>

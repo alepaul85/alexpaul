@@ -1,0 +1,80 @@
+body{color: #f2f2f2;
+  background:url(webpagepic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: BackgroundGradient 10s ease infinite;  
+  padding: 20px;
+  border-radius: 0.5rem;
+  
+}
+
+@keyframes BackgroundGradient {
+  0%{background-position:0% 60%;}
+  50%{background-position: 100% 0% }
+  100%{background-position: 0% 60%}
+}
+
+h1{
+  color:aqua;
+  text-align: center;
+  border: 0;
+  background: linear-gradient(45deg, #FCE38A, black, #fd81b5, red, blue, orange);
+  background-size: 150% ;
+  animation:  h1 2s ease infinite;
+  padding: 0px;
+  color: transparent;
+  background-clip: text;
+}
+   
+@keyframes h1 {
+  0%{background-position:0% 50%;}
+  50%{background-position: 100% 50% }
+  100%{background-position: 0% 50%}
+}
+span.fl{
+  font-size: 40pt;
+  font-family: "times new roman";
+}
+embed{
+  border-bottom-right-radius: 70pt;
+  border-bottom-left-radius: 70pt;
+  height: 150pt;
+  width: 150pt;
+  box-shadow: 10px 9px 15px black;
+}
+
+button{
+  text-align: center;
+  border-block-end-color: red;
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 20pt;
+  font-size: 15pt;
+}
+
+button:hover{
+  animation: btun 0.2s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes btun {
+  0%{box-shadow: 0 0 25px #f00;}
+  50%{box-shadow: 0 0 25px #f00;}
+}
+
+html{
+  text-align: center;
+}
+
+p{
+  text-align: left;
+  color: black;
+} 
+
+header{
+ text-align: right;
+}
+
+        
+
+

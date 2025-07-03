@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+body{
+    background-color:rgb(67, 3, 110);
+}
+
+.head{
+    background-color: rgba(0, 0, 0, 0.158) ;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+nav{
+    justify-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+li{
+    color: white;
+}
+
+img{
+    border-radius: 100px;
+    justify-items: center;
+}
+
+.img{
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: red;
+}
+
+.company-information{
+    background-color: rgba(183, 0, 255, 0.377);
+    border-radius: 10px;
+}
+
+.steps_to_get_stated{
+    background-color: rgba(183, 0, 255, 0.377);
+    border-radius: 10px;
+}
+
+.benifit_of_working_wiht_us{
+    background-color: rgba(183, 0, 255, 0.377);
+    border-radius: 10px;
+}
+
+.alex{
+    background-color: rgba(183, 0, 255, 0.377);
+    border-radius: 10px;
+}
+
+.theodore_saikond{
+    background-color: rgba(183, 0, 255, 0.377);
+    border-radius: 10px;
+}
+p{
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+header{
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+
+button{
+  background: linear-gradient(45deg,red,blue,white,green,yellow);
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+  text-align: center;
+  border-block-end-color: red;
+  border-radius: 20px;
+  animation: btn 2s linear infinite alternate,bntanimation 2s linear infinite;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+@keyframes btn {
+    0%{box-shadow: 0 0 50px aqua;}
+    50%{box-shadow: 0 0 25px  aqua;}
+    100%{box-shadow: 0 0 50px aqua;}
+}
+
+@keyframes bntanimation {
+    to{background-position: -200px ;}
+}
+
+details{
+    justify-items: right;
+}
+
+summary:active{
+    color: red;
+}
+
+details summary{
+    list-style: none;
+    cursor: pointer;
+    padding-left: 28px;
+    position: relative;
+}
+
+details summary::webkit-details--maker{
+    display: none;
+}
+
+details summary::before{
+    content:"" ;
+    justify-items: center;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: 2.5em;
+    top: 0.5em;
+    background: currentColor;
+    box-shadow: 0 -6px 0 currentColor,
+    0 6px 0 currentColor;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+

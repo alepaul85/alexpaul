@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.904)),url(logninpic.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 97.5vh;
+    justify-content: center;
+    justify-items: center;
+}
+
+.number-container{
+    justify-items: center;
+    justify-content: center;
+}
+
+.date-of-birth{
+    justify-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(58, 58, 250);
+}
+
+p{
+    color: #fff;
+}
+
+label{
+
+    color: red;
+    
+}
+
+
+input{
+    text-align: center;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.code{
+    width: 50px;
+}
+
+button{
+    font-size: 20pt;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:active{
+    color: red;
+    transform: translateY(-2px);
+}

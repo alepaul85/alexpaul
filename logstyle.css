@@ -1,0 +1,136 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.904)),url(logninpic.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 97.5vh;
+}
+
+header{
+    text-align: right;
+}
+
+h1{
+    color: rgb(57, 57, 248);
+    text-align: center;
+    background-clip: text;
+    animation: h1 2s linear infinite ;
+    background-size: 50%;
+}
+
+@keyframes h1 {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.233);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 25px rgb(255, 230, 0);
+    transform: translate(135%,10%);
+    width: 25%;
+    border-radius: 10%;
+    padding: 10px;
+    animation: container 2s linear infinite;
+}
+
+@keyframes container {
+        0%{box-shadow: 0 0 25px #0fd;}
+        50%{box-shadow: 0 0 50px #f00;}
+        100%{box-shadow: 0 0 25px rgb(255, 230, 0);}
+    }
+
+label{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20pt;
+    background: linear-gradient(45deg,red,blue,green,orange,black,purple);
+    color: transparent;
+    background-clip: text;
+    animation: lab 2s ease infinite;
+    background-size: 50%;
+    top: 7em;
+}
+
+@keyframes lab {
+    0%{background-position:0% 50%;}
+    50%{background-position: 100% 0% }
+    100%{background-position: 0% 50%}
+}
+
+input{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 10pt;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input:hover::placeholder{
+    color: red;
+    transform: translateY(-5px);
+}
+
+input::placeholder{
+    font-style: italic;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+
+button{
+    text-align: center;
+    border-block-end-color: red;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: 15pt;
+}
+
+button:hover{
+    animation: btun 0.2s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes btun {
+    0%{box-shadow: 0 0 25px #f00;}
+    50%{box-shadow: 0 0 25px #f00;}
+}
+
+a{
+    
+    font-size: 20pt;
+    font-style: bold;
+    color: blue;
+    background-clip: text;
+    text-decoration: underline;
+}
+
+a:hover{
+    animation: btun 0.2s ease infinite;
+    cursor: pointer;
+    border-radius: 20px;
+    color: green;
+    color: aqua;
+}
+
+footer{
+    color: aqua;
+    text-align: center;
+
+}
+

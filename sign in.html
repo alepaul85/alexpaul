@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>registraion</title>
+  <link rel="stylesheet" href="sign in.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <button>home</button>
+      <button>back</button>
+      </a>
+  </header>
+  <h1>Create account for "WEB inter©"</h1>
+  <div class="container">
+    <img id="img">
+    <input  type="file" id="img" onchange="img.src =window.URL.createObjectURL(this.files[0])" required>
+  <table>
+    <tr>
+  <TD >
+    <label for="firstname">firstname</label>
+    <br>
+    <input type="text" id="firstname" placeholder="---first name here---" class="name" required  >
+    <td>
+      <label for="surname">surname</label>
+      <br>
+      <input type="tex" id="surname" placeholder="---surmane here---" class="name" required>
+    </td>
+  </td>
+    </tr>
+  </table>
+  <br>
+  <label for="date of birth:">date of birth:</label>
+  <input type="date" id="date-of-birth" required>
+  <br><br>
+ <label for="age:"> Age:</label>
+  <input type="number" max="100" min="13" id="age" required>
+  <br><br>
+  <label for="Gender: male">Gender: male</label>
+  <input type="checkbox" id="male" required>
+  <label for="female">female</label>
+  <input type="checkbox" id="female" required>
+  <br><br>
+  <label for="country:">Country:</label>
+  <input list="country" placeholder="your country" class="country">
+  <datalist id="country" >
+    <option>algeria</option>
+    <option>Algentina</option>
+    <option>Angola</option>
+    <option>Benin</option>
+    <option>Bugati</option>
+    <option>Burkina Faso</option>
+    <option>burundi</option>
+    <option>Boswana</option>
+    <option>cameroon</option>
+    <option value="cape town"></option>
+    <option value="cental africa republic"></option>
+    <option value="chad"></option>
+    <option value="comoros"></option>
+    <option>Canada</option>
+    <option>China</option>
+    <option value="DRC"></option>
+    <option value="djibouti"></option>
+    <option value="egypt"></option>
+    <option>Dunish</option>
+    <option>England</option>
+    <option value="ethiopia"></option>
+    <option>France</option>
+    <option value="gabon"></option>
+    <option value="gambia"></option>
+    <option value="ghana"></option>
+    <option value="guinea"></option>
+    <option>Ganah</option>
+    <option>Huwen</option>
+    <option>India</option>
+    <option>Japan</option>
+    <option>Kazastan</option>
+    <option value="kenya"></option>
+    <option value="lesotho"></option>
+    <option value="liberia"></option>
+    <option value="libya"></option>
+    <option value="madagascar"></option>
+    <option><p>&#x1F1F2;&#x1F1FC</p>Malawi</option>
+    <option>Mali</option>
+    <option value="morocco"></option>
+    <option>Mozambique</option>
+    <option>Namibia</option>
+    <option value="namibia"></option>
+    <option>Niger</option>
+    <option value="nigeria"></option>
+    <option>Opera</option>
+    <option>Rasia</option>
+    <option value="republic of congo"></option>
+    <option value="rwanda"></option>
+    <option value="somali"></option>
+    <option>South Africa</option>
+    <option>south sudan</option>
+    <option>Taiwan</option>
+    <option>Tanzania</option>
+    <option>Tongo</option>
+    <option value="tunish"></option>
+    <option>Uganda</option>
+    <option>UK</option>
+    <option>USA</option>
+    <option>Veneziwera</option>
+    <option>Washington</option>
+    <option>Zambia</option>
+    <option>Zimbabwe</option>
+  </datalist>
+  <br><br>
+ <label for=" phone"> Phone*</label>
+ <br>
+ <input list="countrycode" placeholder="code" class="countrycode">
+  <datalist id="countrycode" >
+    <option>+0</option>
+    <option>+1</option>
+    <option>+07</option>
+    <option>+7</option>
+    <option>+27</option>
+    <option>+260</option>
+    <option>+265</option>
+    <option>+270</option>
+  </datalist>
+  <input type="text" placeholder="+265*******0" class="phone" required>
+  <br><br>
+  <label for="Email">Email*</label>
+  <br>
+  <input type="email" id="email" placeholder="example@gmail.com">
+  <br><br>
+  <label for="password">password*</label>
+  <br>
+  <input type="password" id="pwd" placeholder="xxxx-xx-xxx" required>
+  <input type="checkbox" onclick="pwd.type= this.checked ? 'text' : 'password'" 
+  title="place this to make your password visible/unvisible">
+  <br><br>
+  <label for="password">Comfirm password*</label>
+  <br>
+  <input type="password" id="pwd" placeholder="xxxx-xx-xxx" required>
+  <input type="checkbox" onclick="pwd.type= this.checked ? 'text' : 'password'" 
+  title="place this to make your password visible/unvisible">
+  <hr>
+  <a href="verification code.html">
+  <button>create or sign in</button>
+</a>
+<p>i already have an account
+  <a href="log in.html">log in</a>
+</p>
+
+</body>
+</html
