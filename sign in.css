@@ -14,7 +14,13 @@ img{
   border-radius: 25px;
   
 }
-
+.custom-file-input{
+  background-color:#4CAF50;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:4px;
+  cursor:pointer;
+}
 header{
   text-align: right;
 }
