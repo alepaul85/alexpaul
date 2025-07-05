@@ -1,50 +1,127 @@
 body{
-        background: linear-gradient(45deg,blue,green,orange,aqua,red);
-        background-position: cover;
-        background-repeat: no-repeat;
-        height: 97.5vh;
-    }
+  background: linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.267)),url(signuppic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f2f2f2;
+  animation: container 2s linear infinite;;
+  padding: 10px;
+  border-radius: 0.5rem;
+  justify-items: center;
+}
 
-.reset-box{
-        justify-items: center;
-        text-align: center;
-    }
+img{
+  width: 10em;
+  height: 10em;
+  border-radius: 25px;
+  
+}
+
+.custom-file-input{
+  background-color: #4CAF50;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+header{
+  text-align: right;
+}
 
 h1{
-    color: blue;
+  background: linear-gradient(45deg,blue,red,green,orange);
+  color: transparent;
+  background-clip: text;
+  animation: h1 3s linear infinite;
+  text-align: center;
+  background-size: 50%;
 }
+
+
+@keyframes h1 {
+  0%{background-position: -2000px;}
+}
+
+.container{
+  justify-items: center;
+
+  border-radius: 20px;
+ 
+}
+
+@keyframes container {
+  0%{box-shadow: 0 0 25px #01fafa;}
+  50%{box-shadow: 0 0 25px #00d;}
+  50%{box-shadow: 0 0 25px #f00;}
+  100%{box-shadow: 0 0 25px #fffb02;}
+}
+.name{
+  text-transform: capitalize;
+}
+.country{
+  width: 8em;
+  text-transform: capitalize;
+}
+
+.countrycode{
+  width: 90px;
+  margin-bottom: 2px;
+}
+
+.phone{
+  width: 9em;
+}
+button{
+  border-block-end-color: red;
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 10pt;
+  font-size: 15pt;
+  animation: btn 1s linear infinite;
+}
+
+@keyframes btn {
+  0%{transform: rotate(0deg);
+    box-shadow: 0 0 20 #0ff;}
+  50%{
+    box-shadow: 2px 0 15px red,0 0 60px #0ff,0 0 40px yellow;}
+  }
+
+  label{
+    font-size: 20px;
+  }
 
 input{
-    text-align: center;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 15pt;
+  text-align: center;
+ 
 }
 
-.input{
-    width: 100px;
-    border-radius: 20px;
-    height: 30px;
-    justify-items: center;
+
+input:hover::placeholder{
+  font-size: 10pt;
+  text-align: left;
 }
 
-#timer{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+ select{
+  border-radius: 29px;
+  outline: 0;
+  border: 1px solid;
+ }
+
+@keyframes BackgroundGradient {
+  0%{background-position:0% 50%;}
+  50%{background-position: 100% 50% }
+  100%{background-position: 0% 50%}
 }
 
-p{
-    text-align: center;
+hr{
+  border: 1px solid;
+  width: 200px;
 }
 
-table{
-    background-color: rgba(85, 4, 4, 0.144);
-    border-radius: 10px;
-    margin: 20px;
-}
-
-tr,td{
-    margin-top: 20px;
-}
-
-span{
-    color: #fff;
+a{
+  font-size: 15pt;
+  color: rgb(127, 127, 255);
 }
