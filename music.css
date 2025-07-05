@@ -3,7 +3,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   animation: body 10s ease infinite;  
- 
   justify-items: center;
   align-items: center;
   }
